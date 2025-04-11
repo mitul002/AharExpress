@@ -1,0 +1,17 @@
+flutter pub add collection
+flutter pub add flutter_credit_card
+flutter pub add intl
+
+npm install -g firebase-tools
+
+firebase login  (same email as firebase)
+flutter pub global activate flutterfire_cli
+environment variable =  C:\Users\hasan\AppData\Local\Pub\Cache\bin
+flutterfire configure
+flutter pub add firebase_core
+flutter pub add firebase_auth
+flutter pub add cloud_firestore
+flutter pub add http
+flutter pub add geolocator
+flutter pub add geocoding
+flutter pub add lottie
