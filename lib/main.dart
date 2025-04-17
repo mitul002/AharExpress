@@ -3,7 +3,7 @@ import 'package:first_app/services/auth/auth_gate.dart';
 import 'package:first_app/firebase_options.dart';
 import 'package:first_app/model/restaurant.dart';
 import 'package:flutter/material.dart';
-import 'package:first_app/theme/theme_provider.dart';
+
 import 'package:provider/provider.dart';
 
 void main() async{
@@ -15,8 +15,7 @@ void main() async{
   runApp(
     MultiProvider(
       providers: [
-        //theme  er provider
-        ChangeNotifierProvider(create: (context) => ThemeProvider()),
+    
 
         //restaurent  er provider
         ChangeNotifierProvider(create: (context) => Restaurant()),
@@ -34,7 +33,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: const AuthGate(),
-      theme: Provider.of<ThemeProvider>(context).themeData,
+      theme: ThemeData(
+        colorScheme: ColorScheme.light(
+          surface: Colors.grey.shade300,
+          primary: Colors.grey.shade500,
+          secondary: Colors.grey.shade100,
+          tertiary: Colors.white,
+          inversePrimary: Colors.grey.shade900,
+        ),
+      ),
     );
   }
 }

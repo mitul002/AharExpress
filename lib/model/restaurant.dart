@@ -289,7 +289,7 @@ class Restaurant extends ChangeNotifier {
   final List<CartItem> _cart = [];
 
   //delivery address (user based)
-  String _deliveryAddress = "khaner mor, monipur";
+  String _deliveryAddress = "khaner mor, monipur, mirpur";
 
 
   /*

@@ -77,7 +77,7 @@ class _DeliveryProgressPageState extends State<DeliveryProgressPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Hasin Almas Mitul",
+                "Support",
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
