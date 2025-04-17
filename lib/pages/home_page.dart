@@ -1,4 +1,4 @@
-
+import 'package:first_app/components/my_current_location.dart';
 import 'package:first_app/components/my_description_box.dart';
 import 'package:first_app/components/my_food_tile.dart';
 import 'package:first_app/components/my_tab_bar.dart';
@@ -86,7 +86,8 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                   color: Theme.of(context).colorScheme.secondary,
                 ),
 
-            
+                // current location
+                MyCurrentLocation(),
 
                 //description box
                 MyDescriptionBox(),
